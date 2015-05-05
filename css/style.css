@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+/*This is a comment in css*/
+
+/* css syntax */
+selector {
+	property: value;
+	propert: value;
+}
+
+
+/* Type Selector */
+p { /*selects all p tags */
+font-size: 12px; 
+line-height: 14px;
+} 
+
+/*This is a font property (short hand, all in one)*/
+
+figcaption {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 12px;
+	font-family: 'Elsie Swash Caps', cursive;
+	text-align: center;
+	color: rgb(161,35,38); /*Can do this as HEX #FF000, or RGB, or RGBA (a is opacity, on e scale from 0-1)*/
+/*This is a font property (short hand, all in one)*/ /*on a mac, use digitl color meter- search it*/
+}
+/*The period indicates a class*/
+.whitetext {/*selects elements with a class attribute of whitetext*/
+font: bold 14px/14px 'Elsie Swash Caps', cursive;
+color: white;
+text-shadow: 2px 3px 4px black;
+}
+
+
+/*ID selector can only be applied to one thing per page*/
+#logo {/*selects items with an ID of logo*/
+	background-color: lime
+}
+
+/*descendent selector*/
+#logo h1 {
+	font-size: 40pt;
+	color: gray;
+	font-family: cursive;
+}
+
+#logo h2 {
+	font-size: 20pt;
+	color: black;
+	font-family: serif;
+}
+
+
+/*psuedo selector*/
+
+#details a:link, #details a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#details a:hover {
+	color: green;
+	text-decoration: underline;
+}
+
+#details a:active {
+	color: red;
+	text-decoration: none;
+}
