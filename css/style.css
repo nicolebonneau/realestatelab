@@ -36,7 +36,7 @@ text-shadow: 2px 3px 4px black;
 
 /*ID selector can only be applied to one thing per page*/
 #logo {/*selects items with an ID of logo*/
-	background-color: lime
+
 }
 
 /*descendent selector*/
@@ -68,4 +68,83 @@ text-shadow: 2px 3px 4px black;
 #details a:active {
 	color: red;
 	text-decoration: none;
+}
+
+img, video, audio {
+	max-width: 100%;
+}
+
+/*///////layout//////*/
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.col-1 {
+	float: left;
+	width: 25%;
+}
+
+.col-2 {
+	float: left;
+	width: 60%;
+}
+
+.clearfix:after {
+	content:".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+.col-3 {
+}
+
+#featured-property {
+	margin-left: 0%;
+}
+
+[class*="col-"] {
+	margin: 2%;
+}
+
+section	{
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.margin-zero {
+	margin-left: 0;
+}
+
+#social {
+	position: fixed;
+	top: 200px;
+	right: 20px;
+	width: 40px;
+	z-index: 1;
+}
+
+#social a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: yellow;
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white
+	z-index: 1;
 }
